@@ -38,7 +38,6 @@ for i in range(len(phone_num)):
     search_w.send_keys(phone_num[i]+ Keys.ENTER)
     time.sleep(2)
     driver.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[2]/div/div[2]').send_keys("Automated Web Message\n "+"Today 22 Carat Gold Price \n ")
-    # driver.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[2]/div/div[2]').send_keys("Today 22 Carat Gold Price \n ")
     driver.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[2]/div/div[2]').send_keys(today_rate)
     driver.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[3]/button/span').click()
 
